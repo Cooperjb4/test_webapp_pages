@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center; /* Center all items horizontally */
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+  }
+
+  /* Title style */
+h1 {
+    margin-top: 20px;
+    font-size: 2rem; /* Adjust as needed */
+    text-align: center;
+  }
+  
+
+/* Make the products display horizontally */
+.productContainer {
+  display: flex;  
+  flex-wrap: wrap;  
+  gap: 30px;  /* Space between items */
+  justify-content: center;  /* Centers items in the container */
+  align-items: stretch;  /* Stretches items to be the same height */
+}
+
+.product {
+  display: flex;
+  flex-direction: column;  /* Stacks the content inside vertically */
+  width: 250px;  /* Width of each product container */
+  min-height: 400px;  /* Ensures a minimum height for the product items */
+  background: #f4f4f4;  /* Background square for each product */
+  padding: 20px;  /* Optional: Space inside each product */
+  border-radius: 10px;  /* Optional: Rounded corners for the background square */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Optional: Adds shadow around the square */
+}
+
+.product img {
+  width: 100%;  /* Makes the image fill the product container */
+  height: 200px;  /* Set a fixed height for images */
+  object-fit: cover;  /* Ensures the image doesn't stretch out of proportion */
+}
+
+  
